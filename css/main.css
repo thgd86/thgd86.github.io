@@ -1,21 +1,13 @@
-@font-face {
-  font-family minecraft;
-  src: url("fonts/minecraft.tff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body{
-  background-color: rgb(10, 10, 10);
+  background-color: #0A0609;
+  font-family: "Inter", sans-serif;
 }
 
 h1{
-  font-family: minecraft;
   font-size: 100px;
   text-align: center;
-  color: rgb(240, 240, 240);
+  color: #F9F5F8;
 }
-
 
 .pfp-image img{
   display: block;
@@ -24,9 +16,8 @@ h1{
   width: 20%;
 }
 
-
 footer {
-  color: rgb(240, 240, 240);
-  font-family: minecraft;
+  color: #F9F5F8;
   text-align: center;
+
 }
