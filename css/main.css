@@ -1,50 +1,85 @@
-body{
-  background-color: #0A0609;
-  font-family: "Inter", sans-serif;
+*{
+  margin: 0;
+  padding: 0;
 }
 
 header{
-  justify-content: space-between;
-  display: flex;
-  color: #F9F5F8;
-  margin-left: 20px;
-  margin-right: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.img_logo_header{
-  width: 100px;
-}
-
-.nav_header a{
-  color: F9F5F8;
-  align-items: center;
-  flex-direction: row;
-  align-items: center;
+a{
+  color: #fff;
   text-decoration: none;
-  color: #F9F5F8;
+  transition: 0.1s;
 }
 
-.nav_header a:hover{
-  color: var(--color-white);
+a:hover{
+  opacity: 0.7;
+}
+
+.logo{
+  width: 100px;
+  margin-left: 30px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin-right: 50px;
+}
+
+.nav-list li{
+  letter-spacing: 1px;
+  margin-left: 30px;
+}
+
+.mobile-menu{
+  display: none;
+  width: 30px;
+}
+
+@media (max-width: 550px) {
+  .nav-list{
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: 0A0609;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .nav-list li {
+    margin-left: 40vw;
+  }
+}
+
+body{
+  background-color: #0A0609;
+  font-family: "Inter", sans-serif;
 }
 
 .info{
   font-size: 20px;
 }
 
-h1{
+main{
   text-align: center;
-  color: #F9F5F8;
+  color: #fff;
 }
 
-.pfp-image img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.pfp-image{
   width: 200px;
 }
 
 footer {
-  color: #F9F5F8;
+  color: #FFF;
   text-align: center;
 }
