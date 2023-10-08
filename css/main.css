@@ -19,7 +19,7 @@ nav{
 
 .nav-item a{
   font-size: 20px;
-  color: #9ca3af;
+  color: white;
   text-decoration: none;
   transition: 0.1s;
 }
@@ -82,13 +82,17 @@ nav{
     top: 72px;
     right: -100%;
     position: fixed;
-    background: #986dff;
+    background: #8b2e7d;
     transition: 0.3s;
+  }
+  .nav-item{
+    margin-trim: 10px;
+    margin: 15px;
   }
   .nav-menu.ativo{
     right: 0;
     width: 100px;
-    height: 250px;
+    height: 220px;
   }
 }
 
