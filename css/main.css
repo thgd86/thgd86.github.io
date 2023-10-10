@@ -1,121 +1,59 @@
-@font-face { font-family: Esteban; src:url(fonts/Esteban-Regular.ttf); } 
-
 *{
-  font-family: Esteban;
   margin: 0;
   padding: 0;
+  font-family: "Cabin", sans-serif;
 }
-
-header img{
-  width: 70px;
-  margin-left: 20px;
+html {
+  scroll-behavior: smooth;
 }
-
-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-item a{
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-  transition: 0.1s;
-}
-
-.nav-item a:hover{
-  opacity: 0.7;
-}
-
-.nav-menu {
-  list-style: none;
-  display: flex;
-}
-
-.nav-item{
-  margin-trim: 10px;
-  margin: 20px;
-}
-
-.menu{
-  margin-right: 20px;
-  margin-left: 20px;
-  cursor: pointer;
-  display: none;
-}
-
-.menu .bar{
-  display: block;
-  width: 28px;
-  height: 3px;
-  border-radius: 5px;
-  background: #986dff;
-  margin: 5px auto;
-  transition: all 0.3s;
-}
-
-.menu .bar:nth-child(1),
-.menu .bar:nth-child(3){
-  background: white;
-}
-
-@media (max-width: 700px) {
-  .menu{
-    display: block;
-  }
-  .menu.ativo .bar:nth-child(1){
-    transform:  translateY(8px) rotate(45deg);
-  }
-  .menu.ativo .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .menu.ativo .bar:nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  .nav-menu{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 250px;
-    top: 72px;
-    right: -100%;
-    position: fixed;
-    background: #8b2e7d;
-    transition: 0.3s;
-  }
-  .nav-item{
-    margin-trim: 10px;
-    margin: 15px;
-  }
-  .nav-menu.ativo{
-    right: 0;
-    width: 100px;
-    height: 220px;
-  }
-}
-
 body{
   background-color: #111;
 }
-
-main{
-  margin-top: 30px;
+@media (max-width: 800px){
+  .home-image{
+    display: none;
+}
+}
+#home {
+  padding: 15rem 20rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.home-image{
+  align-items: center;
+}
+.home-text{
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.8);
+  }
+.home-text h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
   text-align: center;
+}
+.home-text h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #986dff;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+main p{
+  display: flex;
   color: white;
+  padding: 0rem 30rem;
+  word-break: break-word;
+  font-size: 2rem;
 }
-
-main img{
-  width: 200px;
-}
-
-main h1{
-  font-size: 80px;
-}
-
 footer {
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.8);
   text-align: center;
   font-size: 15px;
 }
