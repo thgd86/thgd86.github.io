@@ -15,7 +15,7 @@ body{
 }
 }
 #home {
-  padding: 15rem 20rem;
+  padding: 220px 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,26 +33,27 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 40px;
   text-align: center;
 }
 .home-text h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 60px;
   color: #986dff;
-  padding: 1rem 1rem;
+  padding: 10px 10px;
   text-align: center;
 }
-main p{
+p{
   display: flex;
   color: white;
-  padding: 0rem 30rem;
+  padding: 200px 50px;
   word-break: break-word;
-  font-size: 2rem;
+  font-size: 30px;
 }
 footer {
+  padding: 10px 10px;
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   font-size: 15px;
