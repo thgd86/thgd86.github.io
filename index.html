@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
@@ -7,19 +7,20 @@
     <meta name="author" content="Thiago Macedo">
     <meta name="description" content="Portfólio do desenvolvedor front-end Thiago Macedo">
     <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css">
-    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <link rel="icon" type="image/x-icon" href="images/whitelogo.png">
-    <title>Name Surname</title>
+    <link rel='stylesheet' href='css/header.css'>
+    <link rel='stylesheet' href='css/main.css'>
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <title>Portfólio &bull; Thiago Macedo</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="navigation">
-            <img src="images/whitelogo.png" alt= "Logo">
+            <img src="images/logo.svg" alt= "Logo" width="70px">
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#home">Início</a></li>
-                <li class="nav-item"><a href="#about">Sobre</a></li>
-                <li class="nav-item"><a href="#projects">Projetos</a></li>
-                <li class="nav-item"><a href="#contact">Contato</a></li>
+                <li class="nav-item"><a href="#">Sobre</a></li>
+                <li class="nav-item"><a href="#">Projetos</a></li>
+                <li class="nav-item"><a href="#">Contato</a></li>
             </ul>
             <div class="menu">
                 <span class="bar"></span>
@@ -27,18 +28,25 @@
                 <span class="bar"></span>
             </div>
         </nav>
-        <hr>
     </header>
     <main>
-        <h1>
-            Name
-        </h1>
-        <img src="images/pfp.png"alt= "Foto de perfil">
+        <div id="home">
+            <div class="home-text">
+                <h1>Olá, Eu sou</h1>
+                <h2>Thiago Macedo</h2>
+                <h1>Designer / Front End Developer</h1>
+            </div>
+            <div class="home-image">
+                <img src="images/pfp.png"alt= "Foto de perfil" width="200px">
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
     </main>
+
     <footer>
-        <hr>
-        <a> &copy; Desenvolvido por</a>
+        <a> &copy;2023 </a>
     </footer>
-<script src="js/navbar.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
