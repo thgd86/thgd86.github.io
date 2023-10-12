@@ -3,6 +3,16 @@
   padding: 0;
   font-family: "Cabin", sans-serif;
 }
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+  background-color: #111;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #986dff;
+  border-radius: 10px;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -10,6 +20,7 @@ body{
   background-color: #111;
 }
 header {
+  user-select: none;
   background-color: #111;
   position: fixed;
   width: 100%;
@@ -54,7 +65,7 @@ nav {
 .menu .bar:nth-child(1),.menu .bar:nth-child(3){
   background: white;
 }
-@media (max-width: 800px) {
+@media (max-width: 999px) {
   nav{
     display: flex;
     justify-content: space-between;
@@ -102,29 +113,30 @@ nav {
   }
 }
 #home{
-  padding: 35vh 5vw;
+  user-select: none;
+  padding: 20vh 2vw;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
-.home-text h1, .home-text h2 {
+.home-texts h1, .home-texts h2 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.home-text h1 {
+.home-texts h1 {
   font-size: 40px;
   color: rgba(255, 255, 255, 0.5);
 }
-.home-text h2 {
+.home-texts h2 {
   font-size: 60px;
   color: #986dff;
-  padding: 1px 10px 15px;
 }
-p{
-  padding: 200px 10vw;
+#about{
+  background-color: #151515;
+  padding: 100px 10vw;
   display: flex;
   color: rgba(255, 255, 255, 0.8);
   word-break: break-word;
