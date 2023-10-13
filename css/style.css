@@ -19,21 +19,23 @@ html {
 body{
   background-color: #111;
 }
+/* Header */
 header {
   background-color: #111;
   position: fixed;
   width: 100%;
 }
 nav {
-  padding: 0 30px;
+  padding: 5px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .nav-item a{
-  font-size: 18px;
   color: gray;
   text-decoration: none;
+  font-size: 25px;
+  margin: 30px;
 }
 .nav-item a:hover{
   color: whitesmoke;
@@ -41,9 +43,6 @@ nav {
 .nav-menu {
   list-style: none;
   display: flex;
-}
-.nav-item{
-  margin: 30px;
 }
 .menu{
   margin-right: 20px;
@@ -109,12 +108,16 @@ nav {
     display: none;
   }
 }
+/* Home */
 #home{
-  padding: 140px 2vw;
+  padding: 80px 2vw 100px 2vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+.home-image{
+  padding-top: 120px;
 }
 .home-texts h1, .home-texts h2 {
   font-weight: lighter;
@@ -124,14 +127,15 @@ nav {
   text-align: center;
 }
 .home-texts h1 {
-  font-size: 55px;
+  font-size: 40px;
   color: gray;
 }
 .home-texts h2 {
-  font-size: 65px;
+  font-size: 60px;
   color: #986dff;
   padding-bottom: 10px;
 }
+/* About */
 #about{
   background-color: #151515;
   margin: 3vw 15vw;
@@ -156,6 +160,7 @@ nav {
   text-align: justify;
   padding: 0 5vw 50px;
 }
+/* Footer */
 footer {
   padding: 10px 10px;
   color: whitesmoke;
