@@ -31,7 +31,7 @@ nav {
   align-items: center;
 }
 .nav-item a{
-  font-size: 25px;
+  font-size: 18px;
   color: gray;
   text-decoration: none;
   transition: 0.1s;
