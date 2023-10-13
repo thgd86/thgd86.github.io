@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: "Cabin", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 ::-webkit-scrollbar{
   width: 8px;
@@ -20,32 +20,31 @@ body{
   background-color: #111;
 }
 header {
-  user-select: none;
   background-color: #111;
   position: fixed;
   width: 100%;
 }
 nav {
-  padding: 1rem 2rem;
+  padding: 10px 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .nav-item a{
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+  color: gray;
   text-decoration: none;
   transition: 0.1s;
 }
 .nav-item a:hover{
-  color: white;
+  color: whitesmoke;
 }
 .nav-menu {
   list-style: none;
   display: flex;
 }
 .nav-item{
-  margin: 20px;
+  margin: 30px;
 }
 .menu{
   margin-right: 20px;
@@ -55,7 +54,7 @@ nav {
 }
 .menu .bar{
   display: block;
-  width: 28px;
+  width: 30px;
   height: 3px;
   border-radius: 5px;
   background: #986dff;
@@ -70,7 +69,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 1rem;
   }
   .menu{
     display: block;
@@ -88,9 +86,9 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    width: 130px;
     height: 250px;
-    top: 72px;
+    top: 102px;
     right: -100%;
     position: fixed;
     background: #111;
@@ -102,7 +100,7 @@ nav {
   }
   .nav-menu.ativo{
     right: 0;
-    width: 100px;
+    width: 130px;
     height: 220px;
     border-color: #986dff;
     border-style: solid;
@@ -113,38 +111,55 @@ nav {
   }
 }
 #home{
-  user-select: none;
-  padding: 20vh 2vw;
+  padding: 270px 2vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
 .home-texts h1, .home-texts h2 {
+  font-weight: lighter;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 .home-texts h1 {
-  font-size: 40px;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 55px;
+  color: gray;
 }
 .home-texts h2 {
-  font-size: 60px;
+  font-size: 65px;
   color: #986dff;
+  padding-bottom: 10px;
 }
 #about{
   background-color: #151515;
-  padding: 100px 10vw;
+  margin: 3vw 15vw;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: gray;
   display: flex;
-  color: rgba(255, 255, 255, 0.8);
+  flex-direction: column;
   word-break: break-word;
+  line-height: 35px;
+}
+#about h1{
+  padding: 35px;
   font-size: 30px;
+  color: #986dff;
+  text-align: center;
+}
+#about p{
+  font-size: 25px;
+  color: gray;
+  text-align: center;
+  padding: 0 5vw 50px;
 }
 footer {
   padding: 10px 10px;
-  color: rgba(255, 255, 255, 0.8);
+  color: whitesmoke;
   text-align: center;
   font-size: 15px;
 }
