@@ -4,7 +4,7 @@ const projects = [
         description: "Descrição do projeto",
         image: "images/template.png",
         color: "gray",
-        link: "#"
+        link: "https://thgd86.github.io/"
     }
 ];
 
