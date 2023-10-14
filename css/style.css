@@ -107,6 +107,7 @@ nav {
   .home-image{
     display: none;
   }
+
 }
 /* Home */
 #home{
@@ -135,6 +136,11 @@ nav {
   color: #986dff;
   padding-bottom: 10px;
 }
+@media (max-width: 999px) {
+  #home{
+    padding-top: 200px;
+  }
+}
 /* About */
 #about{
   background-color: #151515;
@@ -146,7 +152,7 @@ nav {
   display: flex;
   flex-direction: column;
   word-break: break-word;
-  line-height: 35px;
+  line-height: 30px;
 }
 #about h1{
   padding: 35px;
@@ -159,6 +165,67 @@ nav {
   color: gray;
   text-align: justify;
   padding: 0 5vw 50px;
+}
+@media (max-width: 999px) {
+  #about p{
+    text-align: center;
+  }
+}
+/* Projects */
+#projects{
+  background-color: #151515;
+}
+#projects h1{
+  text-align: center;
+  color: #986dff;
+  font-size: 40px;
+  padding: 30px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 0 5vw 50px;
+  gap: 40px 20px;
+  justify-content: center;
+  justify-items: center;
+}
+.project{
+  max-width: 700px;
+  padding: 20px;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: gray;
+  text-align: center;
+  align-items: center;
+}
+.project h2, p, a{
+  color: whitesmoke;
+}
+.project img{
+  align-self: center;
+  min-width: none;
+  max-width: 300px;
+  padding: 15px;
+}
+.project-description{
+  padding: 0 1vw;
+  text-align: justify;
+}
+.project a{
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 15px 0 0 0;
+}
+@media (max-width: 999px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 400px));
+  }
 }
 /* Footer */
 footer {
