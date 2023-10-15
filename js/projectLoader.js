@@ -1,5 +1,12 @@
 const projects = [
     {
+        title: "PaletteCraft",
+        description: "Um gerador de paleta de cores(W.I.P.)",
+        image: "images/template.png",
+        color: "gray",
+        link: "PaletteCraft"
+    },
+    {
         title: "Em breve...",
         description: "Descrição do projeto",
         image: "images/template.png",
