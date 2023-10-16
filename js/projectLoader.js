@@ -1,17 +1,9 @@
 const projects = [
     {
-        title: "PaletteCraft",
-        description: "Um gerador de paleta de cores(W.I.P.)",
-        image: "images/template.png",
-        color: "gray",
+        title: "PaletteCraft (W.I.P.)",
+        description: "Um site para gerar de paleta de cores",
+        image: "images/palettecraft.png",
         link: "PaletteCraft"
-    },
-    {
-        title: "Em breve...",
-        description: "Descrição do projeto",
-        image: "images/template.png",
-        color: "gray",
-        link: "site-example"
     }
 ];
 
@@ -25,7 +17,7 @@ projects.forEach(project => {
         <h2>${project.title}</h2>
         <img src="${project.image}" alt="${project.title}">
         <p class="project-description">${project.description}</p>
-        <a style="background-color: ${project.color};" href="${project.link}">Ver mais</a>
+        <a " href="${project.link}">Ver mais</a>
     `;
     projectGrid.appendChild(projectDiv);
 });
