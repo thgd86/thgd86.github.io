@@ -99,8 +99,7 @@ nav {
   
 }
 .about-container{
-  width: 100%;
-  height: 22rem;
+  padding: 0 0 0 0;
   display: flex;
   flex-direction: column;
   background-color: #151515;
@@ -129,40 +128,40 @@ nav {
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 0fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 0fr));
   padding: 0 5vw 50px;
   gap: 40px 20px;
   justify-content: center;
   justify-items: center;
 }
 .project{
-  max-width: 700px;
-  padding: 20px;
   background-color: #111111;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 15rem;
+  min-height: 20rem;
+  padding: 20px;
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
   border-color: #986dff;
-  text-align: center;
-  align-items: center;
 }
 .project h2, p, a{
   color: #939393;
-  font-weight: li;
+  font-weight: lighter;
 }
 .project img{
   border-radius: 2rem;
   align-self: center;
-  min-width: none;
-  max-width: 20rem;
+  max-width: 15rem;
   padding: 1rem;
   pointer-events: none;
 }
 .project-description{
   padding: 0 1vw;
-  text-align: justify;
   font-weight: b;
 }
 .project a{
@@ -181,8 +180,7 @@ nav {
 /* Contact */
 #contact{
   background-color: #151515;
-  width: 100%;
-  height: 20rem;
+  padding: 0 0 0 0;
 }
 #contact h1{
   text-align: center;
@@ -259,10 +257,7 @@ footer a{
     border-style: solid;
     border-width: 1px;
   }
-  #about p{
-    text-align: center;
-  }
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 0fr));
   }
 }
