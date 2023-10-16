@@ -17,7 +17,7 @@ projects.forEach(project => {
         <h2>${project.title}</h2>
         <img src="${project.image}" alt="${project.title}">
         <p class="project-description">${project.description}</p>
-        <a " href="${project.link}">Ver mais</a>
+        <a " href="${project.link}" target="_blank">Ver mais</a>
     `;
     projectGrid.appendChild(projectDiv);
 });
